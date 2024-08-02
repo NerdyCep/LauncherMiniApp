@@ -4,23 +4,38 @@ using UnityEngine;
 
 public class Sounds : MonoBehaviour
 {
+    public AudioSource audioSourceClick; // Источник звука для кликов
+    public AudioSource audioSourceMaine; // Источник фоновой музыки
     
-    public AudioSource audioSource;
-
     void Start()
     {
-        
-        if (audioSource == null)
+        // Если audioSourceMaine не назначен через инспектор, попробуем найти его на этом объекте
+        if (audioSourceMaine == null)
         {
-            audioSource = GetComponent<AudioSource>();
+            audioSourceMaine = GetComponent<AudioSource>();
+        }
+
+        // Начнем воспроизведение фоновой музыки
+        if (audioSourceMaine != null)
+        {
+            audioSourceMaine.loop = true; // Настроим на бесконечное воспроизведение
+            audioSourceMaine.Play(); // Запускаем воспроизведение
+        }
+        else
+        {
+            Debug.LogWarning("AudioSourceMaine не назначен и не найден на этом объекте.");
         }
     }
 
     public void PlaySound()
     {
-        if (audioSource != null)
+        if (audioSourceClick != null)
         {
-            audioSource.Play();
+            audioSourceClick.Play(); // Воспроизводим звук клика
+        }
+        else
+        {
+            Debug.LogWarning("AudioSourceClick не назначен.");
         }
     }
 }

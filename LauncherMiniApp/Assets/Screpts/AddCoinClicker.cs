@@ -11,15 +11,17 @@ public class AddCoinClicker : MonoBehaviour
 
     private int num;
     public TMP_Text textNum;
-    public GameObject TargetObj;
+    public GameObject TargetBonusLine;
+    public GameObject TargetSound;
     private SB_Mode _bonus;
     private Sounds _soundClick;
     
     void Start()
-    {
-        _soundClick = TargetObj.GetComponent<Sounds>();
-       _bonus = TargetObj.GetComponent<SB_Mode>();
+    {  
+        _soundClick = TargetSound.GetComponent<Sounds>();
+        _bonus = TargetBonusLine.GetComponent<SB_Mode>();
     }
+
     public void addNum()
     {
         num++;
@@ -31,10 +33,7 @@ public class AddCoinClicker : MonoBehaviour
         {
             onNumChanged.Invoke();
             _soundClick.PlaySound();
-        }
-        
+        }  
     }
-
- 
 }
 
