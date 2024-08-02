@@ -334,6 +334,7 @@
 -analyzer:"/Users/aleksandrkazulin/Downloads/2022.3.19f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Screpts/AddCoinClicker.cs"
 "Assets/Screpts/SB_Mode.cs"
+"Assets/Screpts/Sounds.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

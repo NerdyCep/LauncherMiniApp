@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SB_Mode : MonoBehaviour
 {
     public Slider _sbSlider;
+    
 
     void Start()
     {
