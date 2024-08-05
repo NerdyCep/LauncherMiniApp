@@ -19,6 +19,9 @@ extern void SB_Mode_Start_mE828970AE616482E70ACF1EEB4487964077593AF (void);
 extern void SB_Mode_SetMaxBonus_m2D07019A1A4EEB15E8DD4635D09C731B0405CAE9 (void);
 extern void SB_Mode_SetBonus_m4F9596FA7FEE92CECF03A01D333457082DA83077 (void);
 extern void SB_Mode__ctor_m53F6E19B42838EC91593249F07DDE36A92377D0D (void);
+extern void Sounds_Start_mC535084B52A02D1D7C6B79CA1EE38EA89C61C5C3 (void);
+extern void Sounds_PlaySound_mA0FBF26B88C792AB92B841E01320667810298A1B (void);
+extern void Sounds__ctor_m3DBFCB62F766E20E0F87D213B9425AEDDE3158D0 (void);
 extern void ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7 (void);
 extern void ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46 (void);
 extern void ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722 (void);
@@ -286,7 +289,7 @@ extern void U3CWarpTextU3Ed__8_MoveNext_mCE7A826C5E4854C2C509C77BD18F5A9B6D691B0
 extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD80368E9B7E259311C03E406B75161ED6F7618E3 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
-static Il2CppMethodPointer s_methodPointers[274] = 
+static Il2CppMethodPointer s_methodPointers[277] = 
 {
 	AddCoinClicker_Start_mA98DAD2ED17E7A4E0B96729A925244C8D60B3138,
 	AddCoinClicker_addNum_mFB5C856060B38EF9F9AB235150082FE6C9CD0182,
@@ -295,6 +298,9 @@ static Il2CppMethodPointer s_methodPointers[274] =
 	SB_Mode_SetMaxBonus_m2D07019A1A4EEB15E8DD4635D09C731B0405CAE9,
 	SB_Mode_SetBonus_m4F9596FA7FEE92CECF03A01D333457082DA83077,
 	SB_Mode__ctor_m53F6E19B42838EC91593249F07DDE36A92377D0D,
+	Sounds_Start_mC535084B52A02D1D7C6B79CA1EE38EA89C61C5C3,
+	Sounds_PlaySound_mA0FBF26B88C792AB92B841E01320667810298A1B,
+	Sounds__ctor_m3DBFCB62F766E20E0F87D213B9425AEDDE3158D0,
 	ChatController_OnEnable_m025CE203564D82A1CDCE5E5719DB07E29811D0B7,
 	ChatController_OnDisable_mD49D03719CAEBB3F59F24A7FA8F4FD30C8B54E46,
 	ChatController_AddToChatOutput_m9AB8FA8A32EA23F2E55795D8301ED0BF6A59F722,
@@ -563,7 +569,7 @@ static Il2CppMethodPointer s_methodPointers[274] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42,
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 };
-static const int32_t s_InvokerIndices[274] = 
+static const int32_t s_InvokerIndices[277] = 
 {
 	4444,
 	4444,
@@ -571,6 +577,9 @@ static const int32_t s_InvokerIndices[274] =
 	4444,
 	3553,
 	3553,
+	4444,
+	4444,
+	4444,
 	4444,
 	4444,
 	4444,
@@ -587,7 +596,7 @@ static const int32_t s_InvokerIndices[274] =
 	4346,
 	4444,
 	4346,
-	6392,
+	6393,
 	4444,
 	870,
 	4444,
@@ -707,7 +716,7 @@ static const int32_t s_InvokerIndices[274] =
 	4346,
 	4346,
 	4444,
-	6388,
+	6389,
 	3553,
 	4444,
 	4271,
@@ -844,7 +853,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	274,
+	277,
 	s_methodPointers,
 	0,
 	NULL,

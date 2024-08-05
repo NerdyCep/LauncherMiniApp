@@ -18,8 +18,8 @@ public class Sounds : MonoBehaviour
         // Начнем воспроизведение фоновой музыки
         if (audioSourceMaine != null)
         {
-            audioSourceMaine.loop = true; // Настроим на бесконечное воспроизведение
-            audioSourceMaine.Play(); // Запускаем воспроизведение
+            audioSourceMaine.loop = false; // Настроим на не бесконечное воспроизведение
+             // Запускаем воспроизведение
         }
         else
         {
